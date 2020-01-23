@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Library App</title>
+  <title>JS Library</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,7 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class=" purple lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Library App JS</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#"></a></li>
@@ -33,51 +33,28 @@
         <input id="title" type="text" placeholder="Title"> 
         <input id="author" type="text" placeholder="Author">
         <input id="pages" type="text" placeholder="Number of Pages">
-        <button class="button">Submit</button>
+        <input id="price" type="text" placeholder="Price">
+        <button class="button" onclick="myFunction()">Add New Book</button>
     </div>
-    <table>
-      <tr class="lib_category">
-        <th>Title</th>
-        <th>Author</th>
-        <th>Pages</th>
-      </tr>
-      <tbody id="table">
+    <br><br>
+    <table id="table">
+      <thead>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Price</th>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-      </tbody>
+      </thead>
+      <tbody></tbody>
     </table>
 
     </div>
   </div>
+  <br><br><br><br>
+  
 
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      
-       
-
-       
-
-    </div>
-    <br><br>
-  </div>
-
-  <footer class="page-footer orange">
+  <footer class="page-footer grey darken-1">
     <div class="container">
       <div class="row">
        
