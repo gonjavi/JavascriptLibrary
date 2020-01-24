@@ -33,8 +33,13 @@
         <input id="title" type="text" placeholder="Title"> 
         <input id="author" type="text" placeholder="Author">
         <input id="pages" type="text" placeholder="Number of Pages">
+        <label>
+          <input  id="read" type="checkbox"  />
+          <span>I have read it</span>
+        </label>
+        <input id="read" type="text" placeholder="Did you read it: yes/no">
         <input id="price" type="text" placeholder="Price">
-        <button class="button" onclick="myFunction()">Add New Book</button>
+        <button class="button" onclick="myAddBooks()">Add New Book</button>
     </div>
     <br><br>
     <table id="table">
@@ -43,7 +48,9 @@
           <th>Title</th>
           <th>Author</th>
           <th>Pages</th>
+          <th>Read Status</th>
           <th>Price</th>
+          <th></th>
         </tr>
       </thead>
       <tbody></tbody>
