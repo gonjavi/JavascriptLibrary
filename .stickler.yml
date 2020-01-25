@@ -12,4 +12,4 @@ files:
     ignore:
         - 'src/generated/*'
         - 'webroot/bower_components/*'
-        - 'css/normalize.css/*'
+        - 'css/normalize.css'
