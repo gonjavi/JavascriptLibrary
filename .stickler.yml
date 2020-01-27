@@ -13,3 +13,4 @@ files:
         - 'src/generated/*'
         - 'webroot/bower_components/*'
         - 'css/normalize.css'
+        - 'js/init.js'

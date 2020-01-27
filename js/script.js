@@ -16,16 +16,22 @@ function addBookToLibrary() {
   let price = document.getElementById('price').value;
   let read;
 
-  var ok = true;
   var msg = 'Please enter all the information requested:\n';
   if(title === "" || author === "" && pages === "" || price === "")
   {
-    ok = false;
-  }
-   if(ok == false){
     alert(msg);
-  return ok;
   }
+
+  if (isNaN(pages)) {
+    msg = 'Number of pages must be a number';
+    alert(msg);
+  }
+
+  if (isNaN(price)) {
+    msg = 'Price must be a number';
+    alert(msg);
+  }
+
   if(checkbox.checked == true){
     read = 'Yes';
   }else{
@@ -84,3 +90,6 @@ function clear(){
   document.getElementById('read').checked = false;
   document.getElementById('price').value = "";
 }
+removeBook();
+myAddBooks();
+changeStatus();
