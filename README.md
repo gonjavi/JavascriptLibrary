@@ -6,5 +6,5 @@ This is a basic website project based on javascript, applying concepts of OOP: o
 <a href="https://github.com/gonjavi/">Gonzalo Javier Mancilla</a>
 
 ## Live version
-http://don'tforgetthelink.com
+<a href="https://gonjavi.github.io/JavascriptLibrary/">JavascriptLibrary</a>
 
