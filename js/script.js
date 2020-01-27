@@ -16,10 +16,15 @@ function addBookToLibrary() {
   let price = document.getElementById('price').value;
   let read;
 
+  var ok = true;
   var msg = 'Please enter all the information requested:\n';
   if(title === "" || author === "" && pages === "" || price === "")
   {
+    ok = false;
+  }
+   if(ok == false){
     alert(msg);
+  return ok;
   }
 
   if (isNaN(pages)) {
@@ -31,7 +36,7 @@ function addBookToLibrary() {
     msg = 'Price must be a number';
     alert(msg);
   }
-
+  
   if(checkbox.checked == true){
     read = 'Yes';
   }else{
